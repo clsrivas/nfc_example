@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NFC Writer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        #nfc-output {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            min-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>NFC Writer</h1>
+        <div>
+            <input type="text" id="nfc-data" placeholder="Enter text to write">
+            <button id="write-button">Write to NFC</button>
+        </div>
+        <div id="nfc-output">Waiting for NFC reader...</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
